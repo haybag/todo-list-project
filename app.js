@@ -25,8 +25,9 @@ function saveToStorage() {
 
 // Loads current list from localStorage
 function loadFromStorage() {
-  if(JSON.parse(localStorage.getItem('todoList') != null)) {
-    todoList = JSON.parse(localStorage.getItem('todoList'));
+  const storedList = localStorage.getItem('todoList');
+  if (storedList !== null) {
+    todoList = JSON.parse(storedList);
   } else {
     todoList = [];
   }
