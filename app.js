@@ -14,10 +14,6 @@ addButton.addEventListener('click', () => {
   }
 });
 
-removeButton.addEventListener('click', () => {
-  removeAllListItems();
-});
-
 // Saves current list to localStorage
 function saveToStorage() {
   localStorage.setItem('todoList', JSON.stringify(todoList));
